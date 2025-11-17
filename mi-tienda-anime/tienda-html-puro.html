@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎌 Tienda de Figuras Anime</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { 
+            background: #f8f9fa;
+            min-height: 100vh;
+            font-family: 'Segoe UI', sans-serif;
+            padding: 20px;
+        }
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+            border-radius: 15px;
+        }
+        .producto {
+            background: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            height: 100%;
+        }
+        .imagen-producto {
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            object-fit: cover;
+        }
+        .badge-oferta {
+            background: #e67e22;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        .badge-serie {
+            background: #3498db;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        .btn-comprar {
+            background: linear-gradient(135deg, #e74c3c, #e67e22);
+            border: none;
+            border-radius: 25px;
+            padding: 0.8rem 2rem;
+            color: white;
+            font-weight: bold;
+            width: 100%;
+            cursor: pointer;
+        }
+        .precio-oferta {
+            color: #e74c3c;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header text-center">
+        <div class="container">
+            <h1 class="display-4">🎌 Tienda de Figuras Anime</h1>
+            <p class="lead">Las mejores figuras importadas directamente desde Japón</p>
+        </div>
+    </div>
+
+    <!-- Productos -->
+    <div class="container">
+        <div class="row">
+            
+            <!-- Goku Ultra Instinct -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="producto">
+                    <img src="https://i.imgur.com/7V3zC4a.jpg" class="imagen-producto" alt="Goku Ultra Instinct">
+                    
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="badge-oferta">🔥 OFERTA</span>
+                        <span class="badge-serie">Dragon Ball Z</span>
+                    </div>
+                    
+                    <h5>Goku Ultra Instinct</h5>
+                    <p class="text-muted small">Shonen</p>
+                    <p class="small">Figura SH Figuarts de Goku en modo Ultra Instinct completo</p>
+                    
+                    <div class="mb-2">
+                        <span class="badge bg-light text-dark me-1">Articulada</span>
+                        <span class="badge bg-light text-dark me-1">20cm</span>
+                    </div>
+                    
+                    <div class="mb-2">⭐⭐⭐⭐⭐ (4.8)</div>
+                    
+                    <div class="mb-3">
+                        <span style="text-decoration: line-through; color: #95a5a6;">$89.99</span>
+                        <span class="precio-oferta">$74.99</span>
+                    </div>
+                    
+                    <button class="btn btn-comprar" onclick="alert('Goku Ultra Instinct agregado al carrito!')">
+                        🛒 Agregar al Carrito
+                    </button>
+                </div>
+            </div>
+
+            <!-- Luffy Gear 5 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="producto">
+                    <img src="https://i.imgur.com/9X8jK7b.jpg" class="imagen-producto" alt="Luffy Gear 5">
+                    
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="badge-serie">One Piece</span>
+                    </div>
+                    
+                    <h5>Luffy Gear 5</h5>
+                    <p class="text-muted small">Shonen</p>
+                    <p class="small">Figura de Luffy en Gear 5 - Edición Limitada</p>
+                    
+                    <div class="mb-2">
+                        <span class="badge bg-light text-dark me-1">Edición limitada</span>
+                        <span class="badge bg-light text-dark me-1">25cm</span>
+                    </div>
+                    
+                    <div class="mb-2">⭐⭐⭐⭐⭐ (4.9)</div>
+                    
+                    <div class="mb-3">
+                        <span class="precio-oferta">$95.50</span>
+                    </div>
+                    
+                    <button class="btn btn-comprar" onclick="alert('Luffy Gear 5 agregado al carrito!')">
+                        🛒 Agregar al Carrito
+                    </button>
+                </div>
+            </div>
+
+            <!-- Sailor Moon -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="producto">
+                    <img src="https://i.imgur.com/5Y2wQ1c.jpg" class="imagen-producto" alt="Sailor Moon">
+                    
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="badge-oferta">🔥 OFERTA</span>
+                        <span class="badge-serie">Sailor Moon</span>
+                    </div>
+                    
+                    <h5>Sailor Moon Eternal</h5>
+                    <p class="text-muted small">Shojo</p>
+                    <p class="small">Sailor Moon en su forma Eternal con efectos brillantes</p>
+                    
+                    <div class="mb-2">
+                        <span class="badge bg-light text-dark me-1">Efectos brillantes</span>
+                        <span class="badge bg-light text-dark me-1">22cm</span>
+                    </div>
+                    
+                    <div class="mb-2">⭐⭐⭐⭐ (4.7)</div>
+                    
+                    <div class="mb-3">
+                        <span style="text-decoration: line-through; color: #95a5a6;">$120.00</span>
+                        <span class="precio-oferta">$99.99</span>
+                    </div>
+                    
+                    <button class="btn btn-comprar" onclick="alert('Sailor Moon agregado al carrito!')">
+                        🛒 Agregar al Carrito
+                    </button>
+                </div>
+            </div>
+
+            <!-- Naruto -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="producto">
+                    <img src="https://i.imgur.com/3Rk9W2J.jpg" class="imagen-producto" alt="Naruto">
+                    
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="badge-oferta">🔥 OFERTA</span>
+                        <span class="badge-serie">Naruto</span>
+                    </div>
+                    
+                    <h5>Naruto Sage Mode</h5>
+                    <p class="text-muted small">Shonen</p>
+                    <p class="small">Naruto en modo Sabio con detalles excepcionales</p>
+                    
+                    <div class="mb-2">
+                        <span class="badge bg-light text-dark me-1">Modo Sabio</span>
+                        <span class="badge bg-light text-dark me-1">18cm</span>
+                    </div>
+                    
+                    <div class="mb-2">⭐⭐⭐⭐ (4.6)</div>
+                    
+                    <div class="mb-3">
+                        <span style="text-decoration: line-through; color: #95a5a6;">$78.99</span>
+                        <span class="precio-oferta">$65.50</span>
+                    </div>
+                    
+                    <button class="btn btn-comprar" onclick="alert('Naruto agregado al carrito!')">
+                        🛒 Agregar al Carrito
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
